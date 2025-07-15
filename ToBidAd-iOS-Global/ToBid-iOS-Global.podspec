@@ -139,7 +139,7 @@ end
      ss.vendored_frameworks = 'tobid-sdk-ios-global/AdNetworks/csj/*.xcframework'
      ss.resource = 'tobid-sdk-ios-global/AdNetworks/csj/*.bundle'
      ss.preserve_paths = 'tobid-sdk-ios-global/AdNetworks/csj/**/*'
-     ss.frameworks = 'UIKit', 'MapKit', 'WebKit', 'MediaPlayer', 'CoreLocation', 'AdSupport', 'CoreMedia', 'AVFoundation', 'CoreTelephony', 'StoreKit', 'SystemConfiguration', 'MobileCoreServices', 'CoreMotion', 'Accelerate','AudioToolbox','JavaScriptCore','Security','CoreImage','AudioToolbox','ImageIO','QuartzCore','CoreGraphics','CoreText'
+     ss.frameworks = 'UIKit', 'MapKit', 'CoreHaptics', 'WebKit', 'MediaPlayer', 'CoreLocation', 'AdSupport', 'CoreMedia', 'AVFoundation', 'CoreTelephony', 'StoreKit', 'SystemConfiguration', 'MobileCoreServices', 'CoreMotion', 'Accelerate','AudioToolbox','JavaScriptCore','Security','CoreImage','AudioToolbox','ImageIO','QuartzCore','CoreGraphics','CoreText'
      ss.weak_frameworks = 'AppTrackingTransparency', 'DeviceCheck', 'CoreML'
      ss.libraries = 'c++', 'resolv', 'z', 'sqlite3', 'bz2', 'xml2', 'iconv', 'c++abi'
      ss.dependency 'ToBid-iOS-Global/ToBidSDK'
