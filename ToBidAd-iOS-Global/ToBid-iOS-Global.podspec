@@ -164,7 +164,7 @@ end
    #   ss.weak_framework = 'WebKit'
    #   ss.libraries = 'z', 'xml2','sqlite3',"c++","c++abi"
      ss.dependency 'ToBid-iOS-Global/ToBidSDK'
-     ss.dependency 'GDTMobSDK', '4.15.40'
+     ss.dependency 'GDTMobSDK', '4.15.41'
   end
 
 
