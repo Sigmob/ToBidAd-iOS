@@ -134,18 +134,18 @@ end
   end
   
   spec.subspec 'TouTiaoAdapter' do |ss|
-     ss.ios.deployment_target = '10.0'
+     ss.ios.deployment_target = '11.0'
      ss.vendored_libraries = 'tobid-sdk-ios-global/AdNetworks/csj/*.a'
      ss.vendored_frameworks = 'tobid-sdk-ios-global/AdNetworks/csj/*.xcframework'
      ss.resource = 'tobid-sdk-ios-global/AdNetworks/csj/*.bundle'
      ss.preserve_paths = 'tobid-sdk-ios-global/AdNetworks/csj/**/*'
-     ss.frameworks = 'UIKit', 'MapKit', 'CoreHaptics', 'WebKit', 'MediaPlayer', 'CoreLocation', 'AdSupport', 'CoreMedia', 'AVFoundation', 'CoreTelephony', 'StoreKit', 'SystemConfiguration', 'MobileCoreServices', 'CoreMotion', 'Accelerate','AudioToolbox','JavaScriptCore','Security','CoreImage','AudioToolbox','ImageIO','QuartzCore','CoreGraphics','CoreText'
-     ss.weak_frameworks = 'AppTrackingTransparency', 'DeviceCheck', 'CoreML'
+     ss.frameworks = 'UIKit', 'MapKit', 'WebKit', 'MediaPlayer', 'CoreLocation', 'AdSupport', 'CoreMedia', 'AVFoundation', 'CoreTelephony', 'StoreKit', 'SystemConfiguration', 'MobileCoreServices', 'CoreMotion', 'Accelerate','AudioToolbox','JavaScriptCore','Security','CoreImage','AudioToolbox','ImageIO','QuartzCore','CoreGraphics','CoreText'
+     ss.weak_frameworks = 'AppTrackingTransparency', 'DeviceCheck', 'CoreML', 'CoreHaptics'
      ss.libraries = 'c++', 'resolv', 'z', 'sqlite3', 'bz2', 'xml2', 'iconv', 'c++abi'
      ss.dependency 'ToBid-iOS-Global/ToBidSDK'
   end
   spec.subspec 'CSJMediationAdapter' do |ss|
-    ss.ios.deployment_target = '10.0'
+    ss.ios.deployment_target = '11.0'
     ss.vendored_libraries = 'tobid-sdk-ios-global/AdNetworks/gromore/*.a'
     ss.vendored_frameworks = 'tobid-sdk-ios-global/AdNetworks/gromore/*.xcframework'
     ss.preserve_paths = 'tobid-sdk-ios-global/AdNetworks/gromore/**/*'
