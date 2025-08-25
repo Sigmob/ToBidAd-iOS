@@ -115,10 +115,11 @@ Pod::Spec.new do |spec|
   spec.subspec 'KSAdapter' do |ss|
      ss.platform     = :ios, '9.0'
      ss.vendored_libraries = 'tobid-sdk-ios-cn/AdNetworks/kuaishou/*.a'
-     ss.vendored_frameworks = 'tobid-sdk-ios-cn/AdNetworks/kuaishou/*.xcframework'
-     ss.preserve_paths = 'tobid-sdk-ios-cn/AdNetworks/kuaishou/**/*'
-     ss.frameworks = "Foundation","UIKit","MobileCoreServices","CoreGraphics","Security","SystemConfiguration","CoreTelephony","AdSupport","CoreData","StoreKit","AVFoundation","MediaPlayer","CoreMedia","WebKit","Accelerate","CoreLocation","AVKit","MessageUI","QuickLook","AudioToolBox","JavaScriptCore","CoreMotion","Photos"
-     ss.libraries = "z","resolv.9","sqlite3","c++","c++abi"
+   #   ss.vendored_frameworks = 'tobid-sdk-ios-cn/AdNetworks/kuaishou/*.xcframework'
+   #   ss.preserve_paths = 'tobid-sdk-ios-cn/AdNetworks/kuaishou/**/*'
+   #   ss.frameworks = "Foundation","UIKit","MobileCoreServices","CoreGraphics","Security","SystemConfiguration","CoreTelephony","AdSupport","CoreData","StoreKit","AVFoundation","MediaPlayer","CoreMedia","WebKit","Accelerate","CoreLocation","AVKit","MessageUI","QuickLook","AudioToolBox","JavaScriptCore","CoreMotion","Photos"
+   #   ss.libraries = "z","resolv.9","sqlite3","c++","c++abi"
+     ss.dependency 'KSAdSDK', '4.7.20.1'
      ss.dependency 'ToBid-iOS/ToBidSDK'
   end
 
