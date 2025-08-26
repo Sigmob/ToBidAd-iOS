@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = 'ToBid-iOS-Global'
-  spec.version      = '4.6.0'
+  spec.version      = '4.6.10'
   spec.summary      = 'ToBid-iOS is a SDK from Sigmob providing AD service.'
   spec.description      = <<-DESC
   ToBid-iOS provides ADs which include native、banner、splash、RewardVideo、Interstitial etc.
@@ -20,7 +20,7 @@ Pod::Spec.new do |spec|
   spec.author       = { 'Codi' => 'codi.zhao@sigmob.com' }
   spec.platform     = :ios, '10.0'
   spec.ios.deployment_target = '10.0'
-  spec.source       = { :http => "https://sdkres.sigmob.cn/ToBid/ios/4.6.0_8b3d428b4bd3ec9334f679a63e80eca8/tobid_release_ios_global_4.6.0_20250806.zip" }
+  spec.source       = { :http => "https://sdkres.sigmob.cn/ToBid/ios/4.6.10_12a299f9faa80e0408fdd9ed3dd0aa8f/tobid_release_ios_global_4.6.10_20250826.zip" }
   spec.xcconfig = { 'VALID_ARCHS' => 'armv7 arm64 x86_64','VALID_ARCHS[sdk=iphoneos*]' => 'armv7 arm64','VALID_ARCHS[sdk=iphonesimulator*]' => 'x86_64', 'OTHER_LDFLAGS' => ['-lObjC'] }
   spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
