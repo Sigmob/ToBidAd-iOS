@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = 'ToBid-iOS'
-  spec.version      = '4.6.85'
+  spec.version      = '2.20.0'
   spec.summary      = 'ToBid-iOS is a SDK from Sigmob providing AD service.'
   spec.description      = <<-DESC
   ToBid-iOS provides ADs which include native、banner、splash、RewardVideo、Interstitial etc.
@@ -20,7 +20,7 @@ Pod::Spec.new do |spec|
   spec.author       = { 'Codi' => 'codi.zhao@sigmob.com' }
   spec.platform     = :ios, '9.0'
   spec.ios.deployment_target = '9.0'
-  spec.source       = { :http => "https://sdkres.sigmob.cn/ToBid/ios/4.6.85_f3950ffae1fbb3b89f1e8b603c4dd2cb/tobid_release_ios_cn_4.6.85_20251112.zip" }
+  spec.source       = { :http => "https://sdkres.sigmob.cn/ToBid/ios/4.6.87_6f9833a1076025dcb5056e593dd3c854/tobid_release_ios_cn_4.6.87_20251117.zip" }
   spec.xcconfig = { 'VALID_ARCHS' => 'armv7 arm64 x86_64','VALID_ARCHS[sdk=iphoneos*]' => 'armv7 arm64','VALID_ARCHS[sdk=iphonesimulator*]' => 'x86_64', 'OTHER_LDFLAGS' => ['-lObjC'] }
   spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
@@ -87,7 +87,7 @@ Pod::Spec.new do |spec|
    #   ss.weak_framework = 'WebKit'
    #   ss.libraries = 'z', 'xml2','sqlite3',"c++","c++abi"
      ss.dependency 'ToBid-iOS/ToBidSDK'
-     ss.dependency 'GDTMobSDK', '4.15.60'
+     ss.dependency 'GDTMobSDK', '4.15.02'
   end
 
   spec.subspec 'VungleAdapter' do |ss|
