@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = 'ToBid-iOS-Global'
-  spec.version      = '4.6.85'
+  spec.version      = '4.6.9'
   spec.summary      = 'ToBid-iOS is a SDK from Sigmob providing AD service.'
   spec.description      = <<-DESC
   ToBid-iOS provides ADs which include native、banner、splash、RewardVideo、Interstitial etc.
@@ -20,7 +20,7 @@ Pod::Spec.new do |spec|
   spec.author       = { 'Codi' => 'codi.zhao@sigmob.com' }
   spec.platform     = :ios, '10.0'
   spec.ios.deployment_target = '10.0'
-  spec.source       = { :http => "https://sdkres.sigmob.cn/ToBid/ios/4.6.85_5c2b5d8811b52194b5ba6606edded441/tobid_release_ios_global_4.6.85_20251112.zip" }
+  spec.source       = { :http => "https://sdkres.sigmob.cn/ToBid/ios/4.6.9_85e90e4f513b0a49d3f63b016b9ebc11/tobid_release_ios_global_4.6.9_20251226.zip" }
   spec.xcconfig = { 'VALID_ARCHS' => 'armv7 arm64 x86_64','VALID_ARCHS[sdk=iphoneos*]' => 'armv7 arm64','VALID_ARCHS[sdk=iphonesimulator*]' => 'x86_64', 'OTHER_LDFLAGS' => ['-lObjC'] }
   spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
@@ -164,7 +164,7 @@ end
    #   ss.weak_framework = 'WebKit'
    #   ss.libraries = 'z', 'xml2','sqlite3',"c++","c++abi"
      ss.dependency 'ToBid-iOS-Global/ToBidSDK'
-     ss.dependency 'GDTMobSDK', '4.15.60'
+     ss.dependency 'GDTMobSDK', '4.15.65'
   end
 
 
@@ -175,7 +175,7 @@ end
    #   ss.preserve_paths = 'tobid-sdk-ios-global/AdNetworks/kuaishou/**/*'
    #   ss.frameworks = "Foundation","UIKit","MobileCoreServices","CoreGraphics","Security","SystemConfiguration","CoreTelephony","AdSupport","CoreData","StoreKit","AVFoundation","MediaPlayer","CoreMedia","WebKit","Accelerate","CoreLocation","AVKit","MessageUI","QuickLook","AudioToolBox","JavaScriptCore","CoreMotion","Photos"
    #   ss.libraries = "z","resolv.9","sqlite3","c++","c++abi"
-     ss.dependency 'KSAdSDK', '4.9.20.3'
+     ss.dependency 'KSAdSDK', '4.11.30.1'
      ss.dependency 'ToBid-iOS-Global/ToBidSDK'
   end
 
