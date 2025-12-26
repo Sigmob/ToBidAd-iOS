@@ -119,7 +119,7 @@ Pod::Spec.new do |spec|
    #   ss.preserve_paths = 'tobid-sdk-ios-cn/AdNetworks/kuaishou/**/*'
    #   ss.frameworks = "Foundation","UIKit","MobileCoreServices","CoreGraphics","Security","SystemConfiguration","CoreTelephony","AdSupport","CoreData","StoreKit","AVFoundation","MediaPlayer","CoreMedia","WebKit","Accelerate","CoreLocation","AVKit","MessageUI","QuickLook","AudioToolBox","JavaScriptCore","CoreMotion","Photos"
    #   ss.libraries = "z","resolv.9","sqlite3","c++","c++abi"
-     ss.dependency 'KSAdSDK', '4.11.30.1
+     ss.dependency 'KSAdSDK', '4.11.30.1'
      ss.dependency 'ToBid-iOS/ToBidSDK'
   end
 
